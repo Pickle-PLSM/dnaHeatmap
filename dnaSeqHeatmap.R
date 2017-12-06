@@ -2,10 +2,10 @@
 ## Description: Visualization of DNA Content via heatmap.
 
 # set the working directory (this is where the input files are and where the output will go).
-setwd("/home/pmoney/Desktop")
+# setwd("/home/pmoney/Desktop")
 
 # read in input file.
-seqs <- read.csv('TestSeq.csv', header = T)
+seqs <- read.csv('SeqComparison.csv', header = T)
 
 # clean up data.
 rownames(seqs) <- seqs[ , 1]

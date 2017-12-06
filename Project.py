@@ -17,7 +17,9 @@ while True:
     #there are two possibilities for the user to input a file or quit if the user inputs one thing it will do one thing if they input something else it will do something else
     if answer != 'quit':
         #if the file inputted by the user (answer) is not quit it will open the file with the permission to read
-        file = open(answer,"r")
+        with open(answer, "r") as file:
+		data = file.read().replace('\n', '') 
+		print data
         #print is used to check to see if the file was open in the with the permissions to read is not needed now
         #print file
     else:
