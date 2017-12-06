@@ -1,23 +1,34 @@
 # Author: Sofie Christie
 
 # Fetch command line arguments
-myArgs <- commandArgs(trailingOnly = TRUE)
+#myArgs <- commandArgs(trailingOnly = TRUE)
 
 # Convert to numerics
-nums = as.numeric(myArgs)
+# nums = as.numeric(myArgs)
 
-pdf(file="plot.pdf")
+png(file="plot.png")
 
-#vector1 <- c(nums[1], nums[2], nums[3], nums[4])
-#barplot(vector1, names.arg=c("A","T","C","G"))
+#df <- read.csv(text =
+#"File,A,T,C,G
+#Seq1.txt,214,214,210,189
+#Seq2.txt,120,120,130,67
+#Seq3.txt,119,118,58,42
+#Seq4.txt,95,96,90,180", header = TRUE)
 
-#vector2 <- c(2, 8, 18, 1)
-#barplot(vector2, names.arg=c("A","T","C","G"))
+df <- read.csv("SeqComparison.csv", header = TRUE)
 
-graph <- function(ACount, TCount, CCount, GCount) {
-  vector <- c(ACount, TCount, CCount, GCount)
-  barplot(vector, names.arg=c("A","T","C","G"), col=rainbow(4), main="ATCG Content", xlab="Nucleotide Bases", ylab="Count", xpd=FALSE, ylim=c(0,max(nums)+5))
-}
+library(ggplot2)
+library(reshape2)
 
-graph(nums[1], nums[2], nums[3], nums[4])
-graph(1, 2, 5, 3)
+df <- melt(df, id = 'File')
+ggplot(
+   data = df,
+   aes(
+      y = value,
+      x = File,
+      group = variable,
+      shape = variable,
+      fill = variable
+   )
+) +
+geom_bar(stat = "identity") + labs(y="Count", fill="Base", title="ATGC Content Relative to Different Sequences")

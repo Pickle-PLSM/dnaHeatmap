@@ -1,3 +1,5 @@
+# Author: Sofie Christie
+
 # run testpython.py
 import subprocess
 
@@ -5,14 +7,11 @@ import subprocess
 command = 'Rscript'
 path2script = 'dnaBarGraph.R'
 
-def build(args):
+def build():
     # Build subprocess command
-    cmd = [command, path2script] + args
+    cmd = [command, path2script]
 
     # check_output will run the command and store to result
     subprocess.check_output(cmd, universal_newlines=True)
 
-# Variable number of args in a list
-seqcount1 = [['2', '7', '9', '1'],['1', '15', '5', '10'],['6', '2', '9', '13']]
-
-build(seqcount1[0])
+build()
