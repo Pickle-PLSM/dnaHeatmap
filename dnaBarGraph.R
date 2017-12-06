@@ -1,29 +1,22 @@
 # Author: Sofie Christie
+# Description: Create a stacked bar graph based off a csv created in python
 
-# Fetch command line arguments
-#myArgs <- commandArgs(trailingOnly = TRUE)
+# print graph to png
+png(file="bargraph.png")
 
-# Convert to numerics
-# nums = as.numeric(myArgs)
-
-png(file="plot.png")
-
-#df <- read.csv(text =
-#"File,A,T,C,G
-#Seq1.txt,214,214,210,189
-#Seq2.txt,120,120,130,67
-#Seq3.txt,119,118,58,42
-#Seq4.txt,95,96,90,180", header = TRUE)
-
+# read in the csv
 df <- read.csv("SeqComparison.csv", header = TRUE)
 
+# import the ggplot2 library for better graphing capabilities
 library(ggplot2)
+# import the reshape2 library to better format the data
 library(reshape2)
 
 df <- melt(df, id = 'File')
 ggplot(
    data = df,
    aes(
+      # input parameters
       y = value,
       x = File,
       group = variable,
@@ -31,4 +24,5 @@ ggplot(
       fill = variable
    )
 ) +
+# add graph and labels
 geom_bar(stat = "identity") + labs(y="Count", fill="Base", title="ATGC Content Relative to Different Sequences")
