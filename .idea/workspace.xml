@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af3149f-862e-4d02-9833-8ca63fc59fa5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dnaHeatmap.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/SeqComparison.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testpython.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bargraph.png" afterPath="$PROJECT_DIR$/bargraph.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/heatmap_output.png" afterPath="$PROJECT_DIR$/heatmap_output.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Init.py" afterPath="$PROJECT_DIR$/Init.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dnaSeqHeatmap.R" afterPath="$PROJECT_DIR$/dnaSeqHeatmap.R" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/heatmap_output.png" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +26,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeqComparison.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SeqComparison.csv">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -61,7 +52,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
-    <option name="y" value="1069" />
+    <option name="y" value="-11" />
     <option name="width" value="1922" />
     <option name="height" value="1092" />
   </component>
@@ -148,7 +139,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="1069" width="1922" height="1092" extended-state="6" />
+    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -234,17 +225,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/bargraph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeqComparison.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bargraph.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Init.py">
@@ -257,7 +248,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SeqComparison.csv">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
