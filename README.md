@@ -173,7 +173,6 @@ png(filename = "heatmap_output.png") #open png file.
 heatmap(seq_matrix, Rowv=NA, Colv=NA,  scale="column", margins=c(7,10)) #heatmap plot.
 ```
 
-
 ## Integrating code:
 
 ```
